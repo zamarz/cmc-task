@@ -6,7 +6,6 @@ function addItemToList() {
   } else {
     alert("Please enter a task before you submit.");
   }
-  console.log(data);
 
   document.getElementById("listEntry").value = "";
 }

@@ -1,15 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  padding-top: 7%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 15px;
+  font-size: xx-large;
+}
+
+h3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 #itemAdder {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
   align-items: center;
+  font-size: x-large;
+}
+
+#formLabel {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#listEntry {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+form button {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: large;
 }
 
 #taskSection {
@@ -17,6 +54,7 @@ h2 {
   display: grid;
   justify-content: center;
   align-items: center;
+  font-size: x-large;
 }
 
 ul {
@@ -31,6 +69,7 @@ ul li {
   padding-top: 7px;
   padding-bottom: 7px;
   transition: 0.2s;
+  margin: 0 auto;
 }
 
 ul li:hover {
@@ -38,12 +77,28 @@ ul li:hover {
 }
 
 #deleteButton {
-  margin-left: 10px;
-  background-color: red;
+  border: 2px solid red;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: large;
 }
 
 ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
+}
+
+form input {
+  width: 10%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+form input:focus {
+  border-color: bisque;
 }
