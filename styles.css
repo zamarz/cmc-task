@@ -1,0 +1,23 @@
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+#itemAdder {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+#taskSection {
+  padding-top: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}

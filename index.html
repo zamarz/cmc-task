@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>CMC To-Do List</title>
   </head>
   <body>
     <h2>Your To-Do List</h2>
-    <div>
-      <label for="listEntry"></label>
+    <div id="itemAdder">
+      <label for="listEntry">Add an item:</label>
       <input
         id="listEntry"
         name="listEntry"
@@ -16,7 +17,7 @@
       />
       <button type="submit">Submit</button>
     </div>
-    <div>
+    <div id="taskSection">
       <h3>Your tasks:</h3>
       <ul>
         <li>Task 1</li>
