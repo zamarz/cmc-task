@@ -1,7 +1,10 @@
 function addItemToList() {
   let newEntryForList = document.getElementById("listEntry").value.trim();
   if (newEntryForList) {
-    data.push(newEntryForList);
+    // data.push(newEntryForList);
+    confirm("Your item has been successfully added");
+  } else {
+    alert("Please enter a task before you submit.");
   }
   console.log(data);
 
