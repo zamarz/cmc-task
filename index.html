@@ -9,15 +9,16 @@
   <body>
     <script src="app.js" defer></script>
     <h2>Your To-Do List</h2>
-    <div id="itemAdder">
+    <form id="itemAdder">
       <label for="listEntry">Add an item:</label>
       <input
+        type="text"
         id="listEntry"
-        name="listEntry"
+        name="listEntryValue"
         placeholder="Enter a task here..."
       />
-      <button type="submit">Submit</button>
-    </div>
+      <button type="button" onclick="addItemToList()">Submit</button>
+    </form>
     <div id="taskSection">
       <h3>Your tasks:</h3>
       <div id="listTasks"></div>

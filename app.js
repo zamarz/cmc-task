@@ -1,9 +1,23 @@
-const listTasks = document.getElementById("listTasks");
+function addItemToList() {
+  let newEntryForList = document.getElementById("listEntry").value;
+  if (typeof newEntryForList !== "undefined" && newEntryForList !== null) {
+    data.push(newEntryForList);
+  }
+  console.log(data);
 
-let data = ["test 1", "test 2"];
+  document.getElementById("listEntry").value = "";
+}
 
-let li = document.createElement("li");
+let data = new Array();
 
-let ul = `<ul>${data.map((data) => `<li>${data}</li>`).join("")}
-    </ul>`;
-listTasks.innerHTML = ul;
+function updateEventList() {
+  const listTasks = document.getElementById("listTasks");
+
+  let li = document.createElement("li");
+
+  let ul = `<ul>${data.map((data) => `<li>${data}</li>`).join("")}
+        </ul>`;
+  listTasks.innerHTML = ul;
+}
+
+itemAdder.addEventListener("click", updateEventList);
