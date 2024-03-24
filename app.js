@@ -31,14 +31,25 @@ function addItemToList() {
 // const itemAdder = document.getElementById("itemAdder");
 // itemAdder.addEventListener("click", addNewListItem);
 
-let list = document.querySelector("ul");
+// let list = document.querySelector("ul");
 
-list.addEventListener(
-  "click",
-  function (event) {
-    if (event.target.tagName === "LI") {
-      event.target.classList.toggle("checked");
-    }
-  },
-  false
-);
+// list.addEventListener(
+//   "click",
+//   function (event) {
+//     if (event.target.tagName === "LI") {
+//       event.target.classList.toggle("checked");
+//     }
+//   },
+//   false
+// );
+
+const listItems = document.querySelectorAll("ul li");
+
+listItems.forEach((li) => {
+  let cb = li.querySelector('input[type="checkbox"]');
+  if (cb) {
+    cb.addEventListener("click", function () {
+      li.classList.toggle("checked");
+    });
+  }
+});
