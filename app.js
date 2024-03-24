@@ -1,6 +1,6 @@
 function addItemToList() {
-  let newEntryForList = document.getElementById("listEntry").value;
-  if (typeof newEntryForList !== "undefined" && newEntryForList !== null) {
+  let newEntryForList = document.getElementById("listEntry").value.trim();
+  if (newEntryForList) {
     data.push(newEntryForList);
   }
   console.log(data);
@@ -8,16 +8,20 @@ function addItemToList() {
   document.getElementById("listEntry").value = "";
 }
 
-let data = new Array();
+let data = [];
 
-function updateEventList() {
+function addNewListItem() {
   const listTasks = document.getElementById("listTasks");
 
-  let li = document.createElement("li");
-
-  let ul = `<ul>${data.map((data) => `<li>${data}</li>`).join("")}
+  let ul = `<ul id="tasksToStyle">${data
+    .map(
+      (item) =>
+        `<li>${item}<button type="button" id="deleteButton">Delete</button></li>`
+    )
+    .join("")}
         </ul>`;
   listTasks.innerHTML = ul;
 }
 
-itemAdder.addEventListener("click", updateEventList);
+const itemAdder = document.getElementById("itemAdder");
+itemAdder.addEventListener("click", addNewListItem);
