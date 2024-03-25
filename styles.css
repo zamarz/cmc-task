@@ -205,7 +205,7 @@ ul hr {
   border: 0.5px solid #ffafcc;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   form {
     display: flex;
     flex-wrap: wrap;
@@ -238,10 +238,17 @@ ul hr {
     transition: 220ms all ease-in-out;
   }
 
-  #listEntry {
+  #formEntry {
     margin-left: 5px;
     margin-right: 5px;
     width: 100%;
     box-sizing: border-box;
+  }
+
+  ul li button {
+    align-items: center;
+    display: inline-flex;
+    padding: 8px 16px;
+    margin-top: 10px;
   }
 }
