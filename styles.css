@@ -146,8 +146,8 @@ ul li.checked {
 
 form input {
   width: 10%;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   border: 2px solid #bde0fe;
   border-radius: 4px;
 }
