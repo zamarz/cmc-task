@@ -127,6 +127,7 @@ ul li {
   cursor: pointer;
   position: relative;
   display: block;
+  justify-content: space-between;
   align-items: center;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -135,6 +136,10 @@ ul li {
   font-size: 1.5rem;
   line-height: 1.1;
   margin-top: 1em;
+}
+
+ul li label {
+  margin-right: 20px;
 }
 
 input[type="checkbox"] {
