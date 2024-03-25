@@ -165,12 +165,12 @@ input[type="checkbox"]:focus {
 }
 
 ul li:hover {
-  background: #ddd;
+  background: #bde0fe;
 }
 
 ul li.checked {
-  background: #888;
-  color: #fff;
+  background: #bde0fe;
+  color: #888;
   text-decoration: line-through;
 }
 
