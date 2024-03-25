@@ -23,7 +23,8 @@ h3 {
   align-items: center;
   display: flex;
 }
-#itemAdder {
+
+form {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
@@ -203,4 +204,45 @@ form input:active {
 
 ul hr {
   border: 0.5px solid #ffafcc;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 15px;
+    align-items: flex-start;
+    font-size: x-large;
+  }
+
+  .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0.25em 0.75em;
+    min-width: 10ch;
+    min-height: 44px;
+
+    text-align: center;
+    line-height: 1.1;
+    cursor: pointer;
+    font-size: large;
+    color: #fff;
+    background: #cdb4db;
+    border: 2px solid #cdb4db;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    transition: 220ms all ease-in-out;
+  }
+
+  #listEntry {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
