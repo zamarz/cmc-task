@@ -148,12 +148,18 @@ form input {
   width: 10%;
   padding-top: 6px;
   padding-bottom: 6px;
-  border: 2px solid black;
+  border: 2px solid #bde0fe;
   border-radius: 4px;
 }
 
 form input:focus {
-  border-color: bisque;
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #bde0fe;
+}
+
+form input:active {
+  border-color: #ffafcc;
 }
 
 ul li input {
