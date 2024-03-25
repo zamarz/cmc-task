@@ -120,6 +120,11 @@ h3 {
 
 ul {
   list-style-type: none;
+  border: 3px solid #ebd5f9;
+  border-radius: 0.15em;
+
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 ul li {
@@ -194,4 +199,8 @@ form input:focus {
 
 form input:active {
   border-color: #ffafcc;
+}
+
+ul hr {
+  border: 0.5px solid #ffafcc;
 }
