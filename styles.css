@@ -41,12 +41,39 @@ h3 {
   margin-right: 5px;
 }
 
-form button {
+.btn {
   margin-left: 5px;
   margin-right: 5px;
-  padding: 6px 14px;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
   cursor: pointer;
   font-size: large;
+  color: #fff;
+  background: #0099cc;
+  border: 2px solid #0099cc;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  transition: 220ms all ease-in-out;
+}
+
+.btn:hover {
+  background-color: #40bfff;
+}
+
+.btn:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #66c9ff;
+}
+
+.btn:active {
+  background-color: #40bfff;
 }
 
 #taskSection {
