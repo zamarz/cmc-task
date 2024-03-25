@@ -36,9 +36,27 @@ form {
   margin-right: 12px;
 }
 
-#listEntry {
+#formEntry {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+form input {
+  width: 10%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 2px solid #bde0fe;
+  border-radius: 4px;
+}
+
+form input:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #bde0fe;
+}
+
+form input:active {
+  border-color: #ffafcc;
 }
 
 .btn {
@@ -123,7 +141,6 @@ ul {
   list-style-type: none;
   border: 3px solid #ebd5f9;
   border-radius: 0.15em;
-
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -182,24 +199,6 @@ ul li.checked {
   background: #bde0fe;
   color: #888;
   text-decoration: line-through;
-}
-
-form input {
-  width: 10%;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  border: 2px solid #bde0fe;
-  border-radius: 4px;
-}
-
-form input:focus {
-  outline-style: solid;
-  outline-color: transparent;
-  box-shadow: 0 0 0 4px #bde0fe;
-}
-
-form input:active {
-  border-color: #ffafcc;
 }
 
 ul hr {
