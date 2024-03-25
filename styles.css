@@ -132,6 +132,36 @@ ul li {
   padding-bottom: 7px;
   transition: 0.2s;
   margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 1px solid #a2d2ff;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  vertical-align: middle;
+  text-align: center;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #cdb4db;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "\2713";
+  color: white;
+}
+
+input[type="checkbox"]:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #ffc8dd;
 }
 
 ul li:hover {
@@ -160,8 +190,4 @@ form input:focus {
 
 form input:active {
   border-color: #ffafcc;
-}
-
-ul li input {
-  margin-right: 10px;
 }
