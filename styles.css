@@ -52,8 +52,8 @@ h3 {
   cursor: pointer;
   font-size: large;
   color: #fff;
-  background: #0099cc;
-  border: 2px solid #0099cc;
+  background: #cdb4db;
+  border: 2px solid #cdb4db;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
@@ -63,17 +63,52 @@ h3 {
 }
 
 .btn:hover {
-  background-color: #40bfff;
+  background-color: #e3cff5;
 }
 
 .btn:focus {
   outline-style: solid;
   outline-color: transparent;
-  box-shadow: 0 0 0 4px #66c9ff;
+  box-shadow: 0 0 0 4px #f3e8ff;
 }
 
 .btn:active {
-  background-color: #40bfff;
+  background-color: #e3cff5;
+}
+
+.deleteBtn {
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  cursor: pointer;
+  font-size: large;
+  color: #fff;
+  background: #ffc8dd;
+  border: 2px solid #ffc8dd;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  transition: 220ms all ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: #ffddf0;
+}
+
+.deleteBtn:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #ffe8f6;
+}
+
+.deleteBtn:active {
+  background-color: #ffddf0;
 }
 
 #taskSection {
@@ -101,15 +136,6 @@ ul li {
 
 ul li:hover {
   background: #ddd;
-}
-
-#deleteButton {
-  border: 2px solid red;
-  margin-left: 10px;
-  margin-right: 5px;
-  padding: 6px 14px;
-  cursor: pointer;
-  font-size: large;
 }
 
 ul li.checked {
