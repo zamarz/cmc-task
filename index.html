@@ -28,15 +28,15 @@
     <main>
       <h2>Your To-Do List</h2>
       <form id="itemAdder">
-        <label for="formEntry" id="formLabel">Add an item:</label>
+        <label for="formEntry" id="formLabel">Enter a task:</label>
         <input
           type="text"
           id="formEntry"
           name="formEntryValue"
-          placeholder="Enter a task here..."
+          placeholder="Write a task here..."
         />
         <button type="button" class="btn" onclick="addItemToList()">
-          Submit
+          Add task
         </button>
       </form>
       <div id="taskSection">
@@ -46,7 +46,7 @@
             <label for="checkbox1">
               <input type="checkbox" id="checkbox1" />
               Read a book </label
-            ><button type="button" class="deleteBtn">Delete</button>
+            ><button type="button" class="deleteBtn">Delete task</button>
           </li>
           <hr />
           <li>
@@ -54,14 +54,14 @@
               <input type="checkbox" id="checkbox2" />
               Water plants
             </label>
-            <button type="button" class="deleteBtn">Delete</button>
+            <button type="button" class="deleteBtn">Delete task</button>
           </li>
           <hr />
 
           <li>
             <label for="checkbox3"
               ><input type="checkbox" id="checkbox3" /> Take a walk </label
-            ><button type="button" class="deleteBtn">Delete</button>
+            ><button type="button" class="deleteBtn">Delete task</button>
           </li>
           <br />
         </ul>
