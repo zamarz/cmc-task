@@ -45,18 +45,18 @@ form input {
   width: 10%;
   padding-top: 9px;
   padding-bottom: 9px;
-  border: 2px solid #bde0fe;
+  border: 2px solid #8ecae6;
   border-radius: 4px;
 }
 
 form input:focus {
   outline-style: solid;
   outline-color: transparent;
-  box-shadow: 0 0 0 4px #bde0fe;
+  box-shadow: 0 0 0 4px #8ecae6;
 }
 
 form input:active {
-  border-color: #ffafcc;
+  border-color: #fb8500;
 }
 
 .btn {
@@ -70,8 +70,8 @@ form input:active {
   cursor: pointer;
   font-size: large;
   color: #fff;
-  background: #cdb4db;
-  border: 2px solid #cdb4db;
+  background: #219ebc;
+  border: 2px solid #219ebc;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
@@ -81,17 +81,17 @@ form input:active {
 }
 
 .btn:hover {
-  background-color: #e3cff5;
+  background-color: #186e8c;
 }
 
 .btn:focus {
   outline-style: solid;
   outline-color: transparent;
-  box-shadow: 0 0 0 4px #f3e8ff;
+  box-shadow: 0 0 0 4px #0f4d61;
 }
 
 .btn:active {
-  background-color: #e3cff5;
+  background-color: #186e8c;
 }
 
 .deleteBtn {
@@ -105,8 +105,8 @@ form input:active {
   cursor: pointer;
   font-size: large;
   color: #fff;
-  background: #ffc8dd;
-  border: 2px solid #ffc8dd;
+  background: #ffb703;
+  border: 2px solid #ffb703;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
@@ -116,13 +116,13 @@ form input:active {
 }
 
 .deleteBtn:hover {
-  background-color: #ffddf0;
+  background-color: #cc9302;
 }
 
 .deleteBtn:focus {
   outline-style: solid;
   outline-color: transparent;
-  box-shadow: 0 0 0 4px #ffe8f6;
+  box-shadow: 0 0 0 4px #996b01;
 }
 
 .deleteBtn:active {
@@ -139,7 +139,7 @@ form input:active {
 
 ul {
   list-style-type: none;
-  border: 3px solid #ebd5f9;
+  border: 3px solid #023047;
   border-radius: 0.15em;
   padding-left: 50px;
   padding-right: 50px;
@@ -167,7 +167,7 @@ ul li label {
 
 input[type="checkbox"] {
   appearance: none;
-  border: 1px solid #a2d2ff;
+  border: 1px solid #8ecae6;
   font: inherit;
   width: 1.15em;
   height: 1.15em;
@@ -178,7 +178,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #cdb4db;
+  background-color: #fb8500;
 }
 
 input[type="checkbox"]:checked:after {
@@ -189,7 +189,7 @@ input[type="checkbox"]:checked:after {
 input[type="checkbox"]:focus {
   outline-style: solid;
   outline-color: transparent;
-  box-shadow: 0 0 0 4px #ffc8dd;
+  box-shadow: 0 0 0 4px #219ebc;
 }
 
 ul li:hover {
@@ -208,7 +208,7 @@ ul li.checked {
 }
 
 ul hr {
-  border: 0.5px solid #ffafcc;
+  border: 0.5px solid #ffb703;
 }
 
 @media only screen and (max-width: 768px) {
@@ -222,39 +222,10 @@ ul hr {
     font-size: x-large;
   }
 
-  .btn {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0.25em 0.75em;
-    min-width: 10ch;
-    min-height: 44px;
-
-    text-align: center;
-    line-height: 1.1;
-    cursor: pointer;
-    font-size: large;
-    color: #fff;
-    background: #cdb4db;
-    border: 2px solid #cdb4db;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-    transition: 220ms all ease-in-out;
-  }
-
   #formEntry {
     margin-left: 5px;
     margin-right: 5px;
     width: 100%;
     box-sizing: border-box;
-  }
-
-  ul li button {
-    align-items: center;
-    display: inline-flex;
-    padding: 8px 16px;
-    margin-top: 10px;
   }
 }
