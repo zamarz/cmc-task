@@ -162,6 +162,7 @@ ul li {
 
 ul li label {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
